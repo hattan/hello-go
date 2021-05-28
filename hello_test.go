@@ -15,3 +15,10 @@ func TestProverb(t *testing.T) {
 		t.Errorf("Proverb() = %q, want %q", got, want)
 	}
 }
+
+func TestGo(t *testing.T) {
+	want := "Don't communicate by sharing memory, share memory by communicating."
+	if got := Go(); got != want {
+		t.Errorf("Proverb() = %q, want %q", got, want)
+	}
+}
